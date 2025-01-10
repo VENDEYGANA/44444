@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Cuentas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Control de Cuentas</h1>
+        <div class="form-group">
+            <label for="cuenta">Datos de la Cuenta:</label>
+            <input type="text" id="cuenta" placeholder="Ingrese los datos de la cuenta">
+        </div>
+        <div class="form-group">
+            <button onclick="guardarDatos()">Guardar</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Datos de la Cuenta</th>
+                        <th>Fecha de Registro</th>
+                        <th>Estado</th>
+                        <th>Correo del Cliente</th>
+                        <th>Fecha de Venta</th>
+                        <th>Fecha de Vencimiento</th>
+                        <th>Copiar Datos</th>
+                    </tr>
+                </thead>
+                <tbody id="datos-body">
+                    <!-- Los datos guardados aparecerán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
